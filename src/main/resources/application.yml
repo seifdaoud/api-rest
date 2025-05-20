@@ -1,0 +1,34 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  config.activate.on-profile: dev
+  datasource:
+    url: jdbc:h2:mem:apirest-db
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true
+    properties.hibernate.format_sql: true
+  h2.console.enabled: true
+
+springdoc:
+  api-docs.path: /api-docs
+  swagger-ui.path: /swagger-ui.html
+
+management.endpoints.web.exposure.include: health,info,prometheus
+
+---
+spring:
+  config.activate.on-profile: prod
+  datasource:
+    url: jdbc:postgresql://localhost:5432/apirest
+    driver-class-name: org.postgresql.Driver
+    username: api
+    password: secret
+  jpa:
+    hibernate.ddl-auto: validate
