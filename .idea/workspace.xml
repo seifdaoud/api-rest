@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3a07c3f-ce36-45e6-9b8a-afa571be99a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/ApiRestApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/advice/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/error/ApiError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/seif/apirest/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/com.github.seif.apirest/service/UserServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/com/github/seif/apirest/controller/UserControllerIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/seif/apirest/config/TestcontainersConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-rest-best-practices.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api-rest-best-practices.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com.github.seif.apirest/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/seif/apirest/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/github/seif/apirest/controller/UserControllerIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/seif/apirest/controller/UserControllerIT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +37,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.UserControllerIT.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "JUnit.test in api-rest-best-practices.executor": "Run",
+    "Maven.api-rest-best-practices [-q...].executor": "Run",
+    "Maven.api-rest-best-practices [clean,install...].executor": "Run",
+    "Maven.api-rest-best-practices [clean,verify].executor": "Run",
+    "Maven.api-rest-best-practices [jib:dockerBuild].executor": "Run",
+    "Maven.api-rest-best-practices [test,#,ou,Run...].executor": "Run",
+    "Maven.api-rest-best-practices [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
@@ -63,6 +60,81 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\seifeddine.daoud\Desktop\Github\api-rest\src\test\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.github.seif.apirest.config" />
+      <recent name="com.github.seif.apirest" />
+      <recent name="com.github.seif.apirest.service" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn jib:dockerBuild" />
+      <command value="mvn clean install -U" />
+      <command value="mvn clean verify  " />
+      <command value="mvn -q jib:dockerBuild" />
+      <command value="docker login            # saisie identifiants " />
+      <command value="mvn test           # ou Run Tests dans IntelliJ " />
+      <command value="mvn test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.UserControllerIT">
+    <configuration name="UserControllerIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-rest-best-practices" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.seif.apirest.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.seif.apirest.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.github.seif.apirest.controller.UserControllerIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-rest-best-practices" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.seif.apirest.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.seif.apirest.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.seif.apirest.service.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test in api-rest-best-practices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-rest-best-practices" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiRestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-rest-best-practices" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.seif.apirest.ApiRestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserControllerIT" />
+        <item itemvalue="JUnit.test in api-rest-best-practices" />
+        <item itemvalue="JUnit.UserServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1747752421610</updated>
-      <workItem from="1747752422814" duration="788000" />
+      <workItem from="1747752422814" duration="2590000" />
     </task>
     <servers />
   </component>

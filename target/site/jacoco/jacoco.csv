@@ -1,0 +1,12 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+API REST Best Practices,com.github.seif.apirest.service,UserServiceImpl,13,25,0,0,1,6,2,3,2,3
+API REST Best Practices,com.github.seif.apirest.advice,GlobalExceptionHandler,54,0,2,0,11,0,6,0,5,0
+API REST Best Practices,com.github.seif.apirest.mapper,UserMapper,18,24,4,0,4,5,4,2,2,2
+API REST Best Practices,com.github.seif.apirest.controller,UserController,18,0,0,0,4,0,4,0,4,0
+API REST Best Practices,com.github.seif.apirest.error,ApiError,18,0,0,0,1,0,1,0,1,0
+API REST Best Practices,com.github.seif.apirest,ApiRestApplication,8,0,0,0,3,0,2,0,2,0
+API REST Best Practices,com.github.seif.apirest.dto,UserDto,0,12,0,0,0,1,0,1,0,1
+API REST Best Practices,com.github.seif.apirest.entity,User,6,24,0,0,2,7,2,7,2,7
+API REST Best Practices,com.github.seif.apirest.config,SwaggerConfig,17,0,0,0,5,0,2,0,2,0
+API REST Best Practices,com.github.seif.apirest.config,CorsConfig,24,0,0,0,7,0,2,0,2,0
+API REST Best Practices,com.github.seif.apirest.config,SecurityConfig,63,0,0,0,14,0,4,0,4,0

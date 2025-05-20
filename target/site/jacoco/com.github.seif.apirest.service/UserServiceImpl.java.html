@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">API REST Best Practices</a> &gt; <a href="index.source.html" class="el_package">com.github.seif.apirest.service</a> &gt; <span class="el_source">UserServiceImpl.java</span></div><h1>UserServiceImpl.java</h1><pre class="source lang-java linenums">package com.github.seif.apirest.service;
+
+import com.github.seif.apirest.dto.UserDto;
+import com.github.seif.apirest.entity.User;
+import com.github.seif.apirest.mapper.UserMapper;
+import com.github.seif.apirest.repository.UserRepository;
+import jakarta.persistence.EntityNotFoundException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+@Service
+@Transactional
+<span class="fc" id="L16">public class UserServiceImpl implements UserService {</span>
+
+    @Autowired
+    private UserRepository repo;
+
+    @Override
+    public UserDto createUser(UserDto dto) {
+<span class="fc" id="L23">        User saved = repo.save(UserMapper.toEntity(dto));</span>
+<span class="fc" id="L24">        return UserMapper.toDto(saved);</span>
+    }
+
+    @Override
+    public UserDto getUser(Long id) {
+<span class="fc" id="L29">        User u = repo.findById(id)</span>
+<span class="pc" id="L30">                .orElseThrow(() -&gt; new EntityNotFoundException(&quot;User &quot; + id + &quot; not found&quot;));</span>
+<span class="fc" id="L31">        return UserMapper.toDto(u);</span>
+    }
+
+    @Override
+    public Page&lt;UserDto&gt; listUsers(Pageable p) {
+<span class="nc" id="L36">        return repo.findAll(p).map(UserMapper::toDto);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

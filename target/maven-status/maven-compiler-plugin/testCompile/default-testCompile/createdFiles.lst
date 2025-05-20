@@ -1,0 +1,3 @@
+com\github\seif\apirest\config\TestcontainersConfig.class
+com\github\seif\apirest\service\UserServiceTest.class
+com\github\seif\apirest\controller\UserControllerIT.class

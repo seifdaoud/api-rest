@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.github.seif.apirest.service.UserServiceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.537 s -- in com.github.seif.apirest.service.UserServiceTest
